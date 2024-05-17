@@ -1,0 +1,57 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "minecraft:item/ender_eye"
+    },
+    "overrides": [
+      {
+        "predicate": {
+          "custom_model_data": 1
+        },
+        "model": "utils/enchantlet_tier_1"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 2
+        },
+        "model": "utils/enchantlet_tier_2"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 3
+        },
+        "model": "utils/enchantlet_tier_3"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 4
+        },
+        "model": "utils/enchantlet_tier_4"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 5
+        },
+        "model": "utils/enchantlet_tier_5"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 6
+        },
+        "model": "utils/fireball"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 7
+        },
+        "model": "utils/ice_spark"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 8
+        },
+        "model": "utils/magic_repair"
+      }
+    ]
+  }
+  

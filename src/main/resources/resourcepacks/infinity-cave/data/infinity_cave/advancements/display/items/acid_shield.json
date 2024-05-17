@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:shield",
+      "nbt": "{CustomModelData:2}"
+    },
+    "title": "How Do You Own Disoder?",
+    "description": [
+      {
+        "text": "Obtain the Acid Shield"
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "infinity_cave:display/structure/sulfide_huts",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:shield"
+            ],
+            "nbt": "{ic:acid_shield}"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:ender_eye",
+        "nbt": "{CustomModelData:2}"
+      },
+      "title": "I Forsee a Great Enchantment...",
+      "description": [
+        {
+          "text": "A GREAT ENCHANTMENT WITH ME!\n\nFind your first Tier II Enchantlet!"
+        }
+      ],
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "infinity_cave:display/enchantlet/1",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "minecraft:ender_eye"
+              ],
+              "nbt": "{ec:2}"
+            }
+          ]
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_sword",
+      "nbt": "{CustomModelData:1}"
+    },
+    "title": "Chime Chime DIE DIE!",
+    "description": [
+      {
+        "text": "Obtain the Amethyst Blade"
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "infinity_cave:display/structure/amethyst_geode",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:netherite_sword"
+            ],
+            "nbt": "{ic:amethyst_blade}"
+          }
+        ]
+      }
+    }
+  }
+}

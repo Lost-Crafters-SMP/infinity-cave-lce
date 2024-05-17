@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:crossbow",
+      "nbt": "{CustomModelData:1}"
+    },
+    "title": "The Battlebox Experience",
+    "description": [
+      {
+        "text": "Obtain the Icicle Crossbow"
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "infinity_cave:display/structure/frozen_robot",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:crossbow"
+            ],
+            "nbt": "{ic:icicle_crossbow}"
+          }
+        ]
+      }
+    }
+  }
+}

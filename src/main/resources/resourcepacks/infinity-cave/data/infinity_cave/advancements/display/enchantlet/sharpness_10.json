@@ -1,0 +1,38 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:netherite_sword"
+      },
+      "title": "The Sharpest Lives",
+      "description": [
+        {
+          "text": "Obtain sharpness X"
+        }
+      ],
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "infinity_cave:display/enchantlet/5",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "tag": "infinity_cave:sharpness",
+              "enchantments": [
+                {
+                  "enchantment": "minecraft:sharpness",
+                  "levels": {
+                    "min": 10
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+  

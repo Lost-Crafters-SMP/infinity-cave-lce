@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+        ],
+        "item": {
+          "items": [
+            "minecraft:bow"
+          ],
+          "nbt": "{ic:sonic_bow}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "infinity_cave:mechanics/weapons/sonic_bow/charge"
+  }
+}

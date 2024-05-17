@@ -1,0 +1,5 @@
+playsound minecraft:entity.stray.death player @a[distance=..10] ~ ~ ~ 1 1.6 1
+
+summon firework_rocket ~ ~ ~ {Life:0,LifeTime:100,ShotAtAngle:1b,Tags:["ic.ice_spark"],Passengers:[{id:"minecraft:potion",Item:{id:"minecraft:lingering_potion",Count:1b,tag:{CustomPotionColor:1703935,custom_potion_effects:[{id:"minecraft:slowness",amplifier:3b,duration:200},{id:"minecraft:weakness",amplifier:1b,duration:200}]}}}],FireworksItem:{id:"firework_rocket",Count:1,tag:{Fireworks:{Explosions:[{Type:4,Colors:[I;2226431]},{Type:4,Colors:[I;2226431]},{Type:4,Colors:[I;2226431]},{Type:4,Colors:[I;2226431]},{Type:4,Colors:[I;2226431]},{Type:4,Colors:[I;2226431]},{Type:4,Colors:[I;2226431]},{Type:4,Colors:[I;2226431]},{Type:4,Colors:[I;2226431]},{Type:4,Colors:[I;2226431]},{Type:4,Colors:[I;2226431]},{Type:4,Colors:[I;2226431]},{Type:4,Colors:[I;2226431]},{Type:4,Colors:[I;2226431]},{Type:4,Colors:[I;2226431]},{Type:4,Colors:[I;2226431]}]}}}}
+
+execute as @e[type=firework_rocket,tag=ic.ice_spark,limit=1,sort=nearest] run function infinity_cave:mechanics/rc/ice_spark/entity

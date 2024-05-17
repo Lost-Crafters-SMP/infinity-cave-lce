@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "nbt": "{ic:enchanted_chorus_fruit}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "infinity_cave:mechanics/food/enchanted_chorus_fruit"
+  }
+}

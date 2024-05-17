@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond_pickaxe"
+    },
+    "title": "Mine Treasure Efficiency",
+    "description": [
+      {
+        "text": "Obtain Efficiency VI+"
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "infinity_cave:display/enchantlet/4",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "infinity_cave:tools",
+            "enchantments": [
+              {
+                "enchantment": "minecraft:efficiency",
+                "levels": {
+                  "min": 6
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

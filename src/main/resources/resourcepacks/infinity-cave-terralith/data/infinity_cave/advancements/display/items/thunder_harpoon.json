@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:shield",
+      "nbt": "{CustomModelData:1}"
+    },
+    "title": "A Drowned Once Wished for This",
+    "description": [
+      {
+        "text": "Obtain the Thunder Harpoon"
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "infinity_cave:display/structure/limestone_houses",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:shield"
+            ],
+            "nbt": "{ic:torpedo_harpoon}"
+          }
+        ]
+      }
+    }
+  }
+}

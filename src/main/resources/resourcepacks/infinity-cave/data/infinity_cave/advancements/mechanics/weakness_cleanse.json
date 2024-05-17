@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:effects_changed",
+        "conditions": {
+          "player": {
+            "nbt": "{Inventory:[{tag:{ic:weakness_cleanse}}]}"
+          },
+          "effects": {
+            "minecraft:weakness": {}
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "infinity_cave:mechanics/weakness_cleanse"
+    }
+  }
+  

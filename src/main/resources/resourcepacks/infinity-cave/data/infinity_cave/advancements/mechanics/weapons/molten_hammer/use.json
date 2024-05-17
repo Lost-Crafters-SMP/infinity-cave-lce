@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ic.molten_hammer": {
+                "min": 5
+              }
+            }
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:brush"
+          ],
+          "nbt": "{ic:molten_hammer}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "infinity_cave:mechanics/weapons/molten_hammer/start_ray"
+  }
+}

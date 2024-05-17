@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:bow",
+      "nbt": "{CustomModelData:1}"
+    },
+    "title": "Skelington, May I Have a Word?",
+    "description": [
+      {
+        "text": "Obtain the Supersonic Bow"
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "infinity_cave:display/structure/deep_temple",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:bow"
+            ],
+            "nbt": "{ic:sonic_bow}"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_hoe",
+      "nbt": "{CustomModelData:1}"
+    },
+    "title": "Pokey Pokey!",
+    "description": [
+      {
+        "text": "Obtain the Bastion Piercer"
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "infinity_cave:display/structure/sulfide_huts",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:netherite_hoe"
+            ],
+            "nbt": "{ic:bastion_piercer}"
+          }
+        ]
+      }
+    }
+  }
+}

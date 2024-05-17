@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_axe",
+      "nbt": "{CustomModelData:1}"
+    },
+    "title": "Erradicate All Shield Users",
+    "description": [
+      {
+        "text": "Obtain the Steel Battleaxe"
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "infinity_cave:display/structure/dinosaur",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:netherite_axe"
+            ],
+            "nbt": "{ic:steel_battleaxe}"
+          }
+        ]
+      }
+    }
+  }
+}

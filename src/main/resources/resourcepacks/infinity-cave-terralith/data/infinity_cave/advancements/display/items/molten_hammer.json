@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:brush",
+      "nbt": "{CustomModelData:1}"
+    },
+    "title": "Stop, Hammertime!",
+    "description": [
+      {
+        "text": "Obtain the Molten Hammer"
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "infinity_cave:display/structure/knuckle_trap",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:brush"
+            ],
+            "nbt": "{ic:molten_hammer}"
+          }
+        ]
+      }
+    }
+  }
+}

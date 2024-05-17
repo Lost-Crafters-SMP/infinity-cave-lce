@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+        ],
+        "item": {
+          "items": [
+            "minecraft:shield"
+          ],
+          "nbt": "{ic:torpedo_harpoon}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "infinity_cave:mechanics/weapons/torpedo_harpoon/charge"
+  }
+}

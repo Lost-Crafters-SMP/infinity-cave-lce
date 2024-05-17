@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:ender_eye",
+      "nbt": "{CustomModelData:3}"
+    },
+    "title": "Tier III SUB TO GRU!",
+    "description": [
+      {
+        "text": "Find your first Tier III Enchantlet!"
+      }
+    ],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "infinity_cave:display/enchantlet/2",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:ender_eye"
+            ],
+            "nbt": "{ec:3}"
+          }
+        ]
+      }
+    }
+  }
+}
